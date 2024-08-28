@@ -6,7 +6,7 @@ export default function Index() {
     return(
         <>
             <Helmet>
-                <title>Träningskocken</title>
+                <title>Hem</title>
             </Helmet>
             <motion.div
                 initial={{ opacity: 0 }}
