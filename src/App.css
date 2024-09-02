@@ -1,8 +1,15 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 .logo {
@@ -39,4 +46,72 @@
 
 .read-the-docs {
   color: #888;
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    background-image: url("https://placehold.co/75x75");
+    border-radius: 50%;
+    background-color: #61dafb;
+    display: inline-block;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar button {
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 50px;
+    width: 150px;
+}
+
+.navright button {
+    border: none;
+    background-color: #61dafb;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 75px;
+    width: 75px;
+}
+
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    background-color: #11A7BB;
+    overflow: hidden;
 }
