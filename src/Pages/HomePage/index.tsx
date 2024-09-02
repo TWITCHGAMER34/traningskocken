@@ -15,6 +15,7 @@ export default function Index() {
             >
                 <h1>Träningskocken</h1>
                 <h2>hej</h2>
+                <h2>på dig</h2>
             </motion.div>
         </>
     )
