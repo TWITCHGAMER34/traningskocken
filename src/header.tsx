@@ -1,21 +1,39 @@
-import "./App.css"
+import "./App.scss"
+import {Link} from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export default function Header() {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isScrollingDown, setIsScrollingDown] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPosition = window.pageYOffset;
+            setIsScrollingDown(currentScrollPosition > scrollPosition);
+            setScrollPosition(currentScrollPosition);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [scrollPosition]);
+
     return (
-        <header>
+        <header className={isScrollingDown ? "hidden" : ""}>
             <div className="Nav">
                 <div className="circle"></div>
                 <div className="navbar">
-                    <button>MENY</button>
-                    <button>MEDLEM</button>
-                    <button>RESTURANGER</button>
+                    <Link to="/meny">MENY</Link>
+                    <Link to="/blimedlem">MEDLEM</Link>
+                    <Link to="/resturanger">RESTURANGER</Link>
                 </div>
                 <div className="navright">
-                    <button><i className="fa fa-search" aria-hidden="true"></i></button>
-                    <button><i className="fa fa-user" aria-hidden="true"></i></button>
+                    <Link to={"#"}><i className="fa fa-search" aria-hidden="true"></i></Link>
+                    <Link to={"/profile"}><i className="fa fa-user" aria-hidden="true"></i></Link>
                 </div>
             </div>
             <hr/>
         </header>
-    )
+    );
 }

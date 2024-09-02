@@ -1,5 +1,5 @@
 import Router from './router.tsx';
-import './App.css'
+import './App.scss'
 import Header from './header.tsx'
 import Footer from './footer.tsx'
 
