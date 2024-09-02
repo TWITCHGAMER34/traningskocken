@@ -1,13 +1,14 @@
 .all_options{
     display: flex;
     justify-content: space-around;
+    flex-grow: 1;
     
 }
 
 .left_box{
     background-color: white;
     width: 20%;
-    border-radius: 10%;
+    border-radius: 25px;
     border-style: solid;
     
 }   
@@ -15,21 +16,40 @@
 .middle_box{
     background-color: white;
     width: 20%;
-    border-radius: 10%;
+    border-radius: 25px;
     border-style: solid;
 }
 
 .right_box{
     background-color: white;
     width: 20%;
-    border-radius: 10%;
+    border-radius: 25px;
     border-style: solid;
+    height: 400px;
 }
 
 .lists{
     
 }
 
-h2{
+h1{
+    text-align: center;
+}
 
+h2{
+    text-align: center;
+    border-bottom-style: solid;
+    
+}
+
+.payment_button{
+    position: absolute;
+    bottom: 160px;
+    right: 5px;
+}
+    
+
+.bottom_text{
+    text-align: center;
+    font-size: larger;
 }
