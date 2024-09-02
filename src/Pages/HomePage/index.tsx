@@ -14,6 +14,7 @@ export default function Index() {
                 exit={{ opacity: 0 }}
             >
                 <h1>Träningskocken</h1>
+                <h2>hej</h2>
             </motion.div>
         </>
     )
