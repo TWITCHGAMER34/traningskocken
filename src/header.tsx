@@ -24,6 +24,7 @@ export default function Header() {
             <div className="Nav">
                 <div className="circle"></div>
                 <div className="navbar">
+                    <Link to="/">HEM</Link>
                     <Link to="/meny">MENY</Link>
                     <Link to="/blimedlem">MEDLEM</Link>
                     <Link to="/resturanger">RESTURANGER</Link>

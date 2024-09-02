@@ -10,7 +10,7 @@ export default function Index() {
             </Helmet>
             <div id="main">
                 <div id="hero">
-                    <img src="https://via.placeholder.com/1000x500" alt="hero"/>
+                    <img src="https://placehold.co/1920x500" alt="hero"/>
                 </div>
                 <motion.div
                     initial={{opacity: 0}}

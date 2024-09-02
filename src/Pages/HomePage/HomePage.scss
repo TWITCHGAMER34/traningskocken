@@ -1,4 +1,3 @@
-/* src/Pages/HomePage/HomePage.scss */
 body {
     background: linear-gradient(135deg, #11A7BB, #31ED31);
 }
@@ -10,14 +9,27 @@ body {
     align-items: center;
     min-height: 100vh;
     max-width: 100vw;
-    margin-top: 537px; /* Adjust based on the header height */
 }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 100vw;
+#hero {
+    width: 100%;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+h1{
+    font-size: 3.2em;
+    line-height: 1.1;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    line-height: 1.1;
+    color: white;
+    text-align: center;
+    border: none !important;
 }
