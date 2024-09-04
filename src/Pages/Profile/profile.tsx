@@ -1,21 +1,11 @@
-// src/Pages/Profile/profile.tsx
 import './profileStyles.scss';
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 
 export default function Profile() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [name] = useState(localStorage.getItem('name') ||"");
+    const [email, setEmail] = useState(localStorage.getItem('email') ||"");
 
-    useEffect(() => {
-        const storedName = localStorage.getItem('name');
-        const storedEmail = localStorage.getItem('email');
-        if (storedName) {
-            setName(storedName);
-        }
-        if (storedEmail) {
-            setEmail(storedEmail);
-        }
-    }, []);
+    console.log(localStorage.getItem('name'))
 
     return (
         <div className="profile-container">
@@ -29,10 +19,12 @@ export default function Profile() {
                         <option value="Kondition">Kondition</option>
                         <option value="Styrketräning">Styrketräning</option>
                     </select>
-                    <button className="danger">Ändra</button>
+                    <button>Ändra</button>
                     <hr/>
-                    <h3>Avsluta prenumeration</h3>
-                    <button className="danger">Avsluta</button>
+                    <div className={"mt-auto flex-col"}>
+                        <h3>Avsluta prenumeration</h3>
+                        <button className="danger">Avsluta</button>
+                    </div>
                 </div>
                 <div className="pbox">
                     <h2>Ditt Medlemsskap</h2>
@@ -43,14 +35,14 @@ export default function Profile() {
                             <li>Notiser</li>
                             <li>Gratis leverans</li>
                         </ul>
-                        <p>pris: x kr</p>
+                        <p className={"right-bottom"}>pris: x kr</p>
                     </div>
                     <select name="membership" id="membership">
                         <option value="Prisgrupp 1">Prisgrupp 1</option>
                         <option value="Prisgrupp 2">Prisgrupp 2</option>
                         <option value="Prisgrupp 3">Prisgrupp 3</option>
                     </select>
-                    <button className="danger">Ändra</button>
+                    <button>Ändra</button>
                 </div>
                 <div className="pbox">
                     <h2>Dina uppgifter</h2>
@@ -66,7 +58,7 @@ export default function Profile() {
                         Lösenord:
                         <input type="password" placeholder="**********"/>
                     </label>
-                    <button className="danger">Ändra</button>
+                    <button>Ändra</button>
                 </div>
             </div>
         </div>

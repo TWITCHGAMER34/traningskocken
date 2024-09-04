@@ -1,45 +1,55 @@
 // src/Pages/Register_%26_login/Register%26Login.tsx
-import { useState } from 'react';
+import {FormEvent, useEffect, useState} from 'react';
 import './styles.scss';
+import {useNavigate} from "react-router-dom";
 
 export default function RegisterAndLogin() {
     const [showLogin, setShowLogin] = useState(false);
+    const navigate = useNavigate();
 
     const toggleView = () => {
         setShowLogin(!showLogin);
     };
 
-    const handleRegister = (event: React.FormEvent<HTMLFormElement>) => {
+    useEffect(() => {
+        const mail = localStorage.getItem("loggedIn");
+        if (mail) navigate("/profile")
+    }, [navigate]);
+
+    const handleRegister = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const email = event.currentTarget.email.value;
         const password = event.currentTarget.password.value;
-        const name = event.currentTarget.name.valueOf();
+        const name = event.currentTarget.username.value;
         localStorage.setItem('email', email);
         localStorage.setItem('password', password);
         localStorage.setItem('name', name);
         alert('Registration successful! You can now log in.');
+        setShowLogin(true)
     };
 
-    const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleLogin = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+
         const email = event.currentTarget.email.value;
         const password = event.currentTarget.password.value;
         const storedEmail = localStorage.getItem('email');
         const storedPassword = localStorage.getItem('password');
         if (email === storedEmail && password === storedPassword) {
-            alert('Login successful!');
+            localStorage.setItem("loggedIn", "true")
+            navigate("/profile")
         } else {
             alert('Invalid email or password.');
         }
     };
 
     return (
-        <div className="container">
+        <div className="container-auth">
             <div className={`register ${showLogin ? 'hidden' : 'shown'}`}>
                 <h2>Register</h2>
                 <form onSubmit={handleRegister}>
                     <input type="email" name="email" placeholder="John.Doe@example.com" required />
-                    <input type="text" name="name" placeholder="Name" required />
+                    <input type="text" name="username" placeholder="Name" required />
                     <input type="password" name="password" placeholder="Password" required />
                     <input type="password" name="repeatPassword" placeholder="Repeat Password" required />
                     <div className="checkbox-container">
