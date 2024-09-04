@@ -6,9 +6,11 @@
     color: black;
     text-decoration: underline;
   }
-  p{
+  b{
     text-align: center;
     margin-top: auto;
+    
+    
   }
 }
 
@@ -22,8 +24,17 @@
   border-style: solid;
 }
 
-.lists{
-
+.payment_button{
+    background-color: greenyellow ;
+  border-radius: 25px; 
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border: 2px solid black !important ;
+  
+  
+  
+    
 }
 
 
@@ -32,4 +43,7 @@
   font-size: 1.5em;
   font-weight: bold;
   color: white;
+  
+   
+  
 }
