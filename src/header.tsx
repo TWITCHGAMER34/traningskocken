@@ -22,7 +22,9 @@ export default function Header() {
     return (
         <header className={isScrollingDown ? "hidden" : ""}>
             <div className="Nav">
-                <div className="circle"></div>
+                <div className="circle">
+                    <img src="../public/LOGO-removebg.png" alt=""/>
+                </div>
                 <div className="navbar">
                     <Link to="/">HEM</Link>
                     <Link to="/meny">MENY</Link>
@@ -31,7 +33,7 @@ export default function Header() {
                 </div>
                 <div className="navright">
                     <Link to={"#"}><i className="fa fa-search" aria-hidden="true"></i></Link>
-                    <Link to={"/profile"}><i className="fa fa-user" aria-hidden="true"></i></Link>
+                    <Link to={"/login"}><i className="fa fa-user" aria-hidden="true"></i></Link>
                 </div>
             </div>
             <hr/>
