@@ -1,49 +1,51 @@
-.all_options{
+.all_options {
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
-  h2{
+
+  h2 {
     color: black;
     text-decoration: underline;
   }
-  b{
+
+  b {
     text-align: center;
     margin-top: auto;
-    
-    
   }
 }
 
-.box{
+h1 {
+  text-align: center;
+}
+
+.box {
   display: flex;
   flex-direction: column;
   background-color: white;
+  justify-content: center;
+  align-items: center;
   color: black;
   width: 20%;
   border-radius: 25px;
   border-style: solid;
 }
 
-.payment_button{
-    background-color: greenyellow ;
-  border-radius: 25px; 
+.payment_button {
+  background-color: greenyellow;
+  border-radius: 25px;
   margin-bottom: 3px;
   margin-left: 3px;
   margin-right: 3px;
-  border: 2px solid black !important ;
-  
-  
-  
-    
+  border: 2px solid black !important;
+  width: 250px;
 }
 
 
-.bottom_text{
+.bottom_text {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
   color: white;
-  
-   
-  
+
+
 }

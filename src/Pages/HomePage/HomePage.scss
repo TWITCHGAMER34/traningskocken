@@ -100,9 +100,11 @@ body {
     color: yellow;
     font-size: 75px;
     margin: 0 5px;
+    padding: 5px;
   }
 
   .star::before {
     content: '\2605';
+
   }
 }
