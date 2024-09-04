@@ -1,0 +1,75 @@
+// src/Pages/Profile/profileStyles.scss
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+}
+
+.pbox {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  background-color: #007BFF;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  .val{
+    width: 300px;
+    height: 200px;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 20px;
+  }
+  h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  select, input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF4136;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #FF6347;
+  }
+  .danger {
+    background-color: #FF4136;
+  }
+}

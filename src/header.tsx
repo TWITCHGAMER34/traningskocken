@@ -20,10 +20,10 @@ export default function Header() {
     }, [scrollPosition]);
 
     return (
-        <header className={isScrollingDown ? "hidden" : ""}>
+        <header className={isScrollingDown ? "hhidden" : ""}>
             <div className="Nav">
                 <div className="circle">
-                    <img src="../public/LOGO-removebg.png" alt=""/>
+                    <img src="/LOGO-removebg.png" alt=""/>
                 </div>
                 <div className="navbar">
                     <Link to="/">HEM</Link>
