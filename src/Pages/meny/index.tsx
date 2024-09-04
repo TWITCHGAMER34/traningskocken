@@ -6,7 +6,13 @@ export default function Menu(){
         <>
         <Helmet>MENY</Helmet>
     
-        <h1>shvcshdbcjbskjdbc</h1>
+        <div className='training_selection'>
+            <p>Välj den meny som passar din träning</p>
+            <button>Styrke Träning</button>
+            <button>Konditions Träning</button>
+            <button>HIT</button>
+
+        </div>
     </>
     )
 
