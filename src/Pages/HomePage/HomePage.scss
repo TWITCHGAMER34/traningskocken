@@ -20,6 +20,13 @@ body {
     text-align: center;
   }
 
+  p {
+    font-size: 1.5em;
+    line-height: 1.1;
+    text-align: center;
+    font-weight: bold;
+  }
+
   a {
     background-color: #61dafb;
     border: none;
@@ -106,5 +113,38 @@ body {
   .star::before {
     content: '\2605';
 
+  }
+}
+
+.cert {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    .titles {
+      font-size: 1.2em;
+      line-height: 0.1;
+      text-align: center;
+      margin: 0;
+    }
   }
 }

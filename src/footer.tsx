@@ -4,7 +4,9 @@ export default function Footer() {
     return (
         <footer>
             <div className={"footer-cont"}>
-                test
+                <div className="footer-logo">
+                    <img src="/LOGO-removebg.png" alt="logo"/>
+                </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#11A7BB" fillOpacity="1"

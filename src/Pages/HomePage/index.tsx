@@ -38,6 +38,27 @@ export default function Index() {
                 </div>
                 <p>"Det bästa jag någonsin käkat" - Zoltan</p>
                 <hr/>
+                <div className="cert">
+                    <img src="https://placehold.co/400x200" alt=""/>
+                    <h2>100% EKOLOGISKT</h2>
+                    <img src="https://placehold.co/400x200" alt=""/>
+                </div>
+                <hr/>
+                <div className="bottom-section">
+                    <div className="member">
+                        <div className="titles">
+                            <h1>VÅRA MEDLEMMAR SPARAR</h1>
+                            <h1>X%</h1>
+                        </div>
+                        <Link to="/blimedlem">BLI MEDLEM</Link>
+                    </div>
+                    <hr/>
+                    <div className="contact">
+                        <h2>NÅGOT DU FUNDERAR ÖVER?</h2>
+                        <h2>KONTAKTA OSS</h2>
+                        <h2>EAT@TRAIN.GAIN</h2>
+                    </div>
+                </div>
             </div>
         </>
     )

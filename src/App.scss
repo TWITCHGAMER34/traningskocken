@@ -108,6 +108,18 @@ footer {
     position: absolute;
   }
 
+  .footer-logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+  }
+
   svg {
     position: absolute;
     bottom: 0;
