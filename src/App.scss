@@ -20,7 +20,7 @@ header {
   color: white;
   text-align: center;
   transition: transform 0.5s ease-in-out;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .hidden {
@@ -38,13 +38,17 @@ header {
 .circle {
   width: 75px;
   height: 75px;
-  background-image: url("https://placehold.co/75x75");
   border-radius: 50%;
-  background-color: #61dafb;
+  border: 2px solid black;
   display: inline-block;
   margin: 10px;
   align-content: center;
   justify-content: center;
+  img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
 }
 
 .navbar a {
