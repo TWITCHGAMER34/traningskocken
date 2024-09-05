@@ -54,7 +54,7 @@ export default function RegisterAndLogin() {
                     <input type="password" name="repeatPassword" placeholder="Repeat Password" required />
                     <div className="checkbox-container">
                         <div>
-                            <input type="checkbox" id="promo" required />
+                            <input type="checkbox" id="promo"/>
                             <label htmlFor="promo">I agree to receiving promo emails and new product updates.</label>
                         </div>
                         <div>
